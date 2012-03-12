@@ -12,7 +12,7 @@ public class DependencyTest {
     public void test_dependency() throws Exception {
         String pomContent = FileUtil.loadContent(new File("pom.xml"));
 
-        assertTrue("Cette librairie ne doit avoir aucune dépendance",
-                   pomContent.contains("<dependencies/>") || pomContent.contains("<dependencies />"));
+        assertTrue("Cette librairie ne doit avoir aucune dï¿½pendance",
+                   pomContent.contains("<dependencies>        <dependency>\n            <groupId>junit</groupId>\n  ncies>));
     }
 }
